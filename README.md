@@ -29,14 +29,14 @@ go mod tidy
 ```
 
 
-4. **Set up the required environment variables by creating a `.env` file in the project root directory with the following content:**
+4. **Set up the required environment variables by creating a .env file in the project root directory using the .env-template file, with the following content:**
 
 - EMAIL=your_email@gmail.com
-- PASSWORD=your_email_password
+- PASSWORD=your_email_app_password
 - TO_EMAIL=your_kindle_email@kindle.com
 - BOOKS_DIR=/path/to/your/books/directory
 
-Replace `your_email@gmail.com` with your Gmail address, `your_email_password` with your Gmail password (or application-specific password if you have 2-factor authentication enabled), and `your_kindle_email@kindle.com` with your Kindle email address. Additionally, set the `BOOKS_DIR` variable to the path where your books are stored.
+Replace `your_email@gmail.com` with your Gmail address, `your_email_app_password` generate a new application-specific password in your Google account, and `your_kindle_email@kindle.com` with your Kindle email address. Additionally, set the `BOOKS_DIR` variable to the path where your books are stored.
 
 ## Usage
 
@@ -46,10 +46,6 @@ go run main.go "book_name.pdf"
 ```
 
 Replace `book_name.pdf` with the name of the book file you want to send. Make sure to enclose the file name in double quotes if it contains spaces.
-
-## Limitations
-
-- Currently, Book to Kindle only supports PDF files as attachments.
 
 ## Contributing
 
